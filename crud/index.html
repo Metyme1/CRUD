@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit">
+                    <div>
+                        <label for="productCode">Product code</label>
+                        <input type="number" name="productCode" id="productCode">
+
+                    </div>
+                    <div>
+                        <label for="product">Product Name</label>
+                        <input type="text" name="product" id="product">
+                        
+                    </div>
+                    <div>
+                        <label for="qty">Qty</label>
+                        <input type="text" name="qty" id="qty">
+                        
+                    </div>
+                    <div>
+                        <label for="perPrice">Price</label>
+                        <input type="number" name="perPrice" id="perPrice">
+                        
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </div>
+    
+                </form>
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                            <th> Product code</th>
+                            <th> Product Name</th>
+                            <th> Qty</th>
+                            <th> Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
